@@ -26,6 +26,8 @@
     border: 3px solid var(--color);
     padding: 8px 15px;
     border-radius: var(--border-radius);
+    background-image: linear-gradient(145deg, rgba(255,255,255,1) 0%, rgba(57, 133, 255, 0.192) 100%);
+    box-shadow: 0px 0px 20px rgba(57, 133, 255, 0.712);
 }
 
 .nft__title{
@@ -43,6 +45,10 @@
     width: 98%;
     margin: 30px auto;
     border-radius: var(--border-radius);
+}
+
+.nft__image:hover{
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.432);
 }
 
 .nft__price{
@@ -64,4 +70,5 @@
     font-size: var(--nft-title-size);
     color: #e42d65;
     text-align: right;
+    cursor: pointer;
 }
