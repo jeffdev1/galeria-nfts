@@ -1,5 +1,67 @@
+:root{
+    --outline-debugger: 2px soid red;
+    --nft-title-size: 1.3rem;
+    --nft-text-size: 1rem;
+    --nft-price-size: 1.5rem;
+    --border-radius: 8px;
+    --color: #3984ff;
+}
+
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: monospace, sans-serif;
+}
+
+.contenedor-main{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    width: 80vw;
+}
+
+.nft{
+    width: 30%;
+    border: 3px solid var(--color);
+    padding: 8px 15px;
+    border-radius: var(--border-radius);
+}
+
+.nft__title{
+    font-size: var(--nft-title-size);
+    font-weight: bold;
+}
+
+.nft__collection{
+    font-size: var(--nft-text-size);
+    color: rgb(53, 53, 53);
+}
+
+.nft__image{
+    display: block;
+    width: 98%;
+    margin: 30px auto;
+    border-radius: var(--border-radius);
+}
+
+.nft__price{
+    color: var(--color);
+    font-size: var(--nft-price-size);
+    font-weight: bold;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.103);
+    margin-bottom: 12px;
+}
+
+.nft__price-crypto{
+    color: var(--nft-price-size);
+    font-weight: bold;
+    font-size: var(--nft-text-size);
+}
+
+.nft__likes{
+    display: block;
+    font-size: var(--nft-title-size);
+    color: #e42d65;
+    text-align: right;
 }
