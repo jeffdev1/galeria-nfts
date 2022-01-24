@@ -18,7 +18,12 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 30px;
+    margin-bottom: 30px;
     width: 80vw;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    gap: 25px 0px;
 }
 
 .nft{
@@ -48,7 +53,7 @@
 }
 
 .nft__image:hover{
-    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.432);
+    box-shadow: 0px 0px 8px rgb(0, 0, 0);
 }
 
 .nft__price{
@@ -71,4 +76,36 @@
     color: #e42d65;
     text-align: right;
     cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    .contenedor-main{
+        flex-flow: column wrap;
+    }
+
+    .nft{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    :root{
+        --outline-debugger: 2px soid red;
+        --nft-title-size: 1.1rem;
+        --nft-text-size: 0.8rem;
+        --nft-price-size: 1.3rem;
+        --border-radius: 8px;
+        --color: #3984ff;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    :root{
+        --outline-debugger: 2px soid red;
+        --nft-title-size: 0.8rem;
+        --nft-text-size: 0.65rem;
+        --nft-price-size: 1rem;
+        --border-radius: 8px;
+        --color: #3984ff;
+    }
 }
